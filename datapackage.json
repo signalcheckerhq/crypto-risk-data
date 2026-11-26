@@ -1,0 +1,106 @@
+{
+  "name": "crypto-risk-data",
+  "title": "Crypto risk data: leverage survival and leaderboard luck",
+  "homepage": "https://signalcheckerhq.org/data/",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Coinbase Exchange public 1-hour candles",
+      "path": "https://api.exchange.coinbase.com"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "SignalCheckerHQ",
+      "path": "https://signalcheckerhq.org/",
+      "role": "author"
+    }
+  ],
+  "created": "2026-11-26",
+  "resources": [
+    {
+      "name": "leverage-survival-by-coin-2026-11",
+      "path": "data/leverage-survival-by-coin-2026-11.csv",
+      "title": "Which leverage survived: 8 coins, 1,000 hourly entries each",
+      "description": "Share of hourly entries liquidated by normal swings, 2x-100x, 24h and 168h holds, long and short, isolated margin with 0.5% maintenance margin.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "coin",
+            "type": "string"
+          },
+          {
+            "name": "side",
+            "type": "string"
+          },
+          {
+            "name": "hold_hours",
+            "type": "integer"
+          },
+          {
+            "name": "leverage",
+            "type": "integer"
+          },
+          {
+            "name": "entries",
+            "type": "integer"
+          },
+          {
+            "name": "share_liquidated",
+            "type": "number"
+          },
+          {
+            "name": "first_entry_utc",
+            "type": "date"
+          },
+          {
+            "name": "last_entry_utc",
+            "type": "date"
+          }
+        ]
+      }
+    },
+    {
+      "name": "random-traders-oct-nov-2026",
+      "path": "data/random-traders-oct-nov-2026.csv",
+      "title": "500 coin-flip traders: leaderboard luck, two months",
+      "description": "Monthly returns and ranks of 500 random traders (90 trades/month, 3x, 4h hold, 0.05% fee per side) on BTC-USD, Sep 26-Oct 26 and Oct 26-Nov 25, 2026.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "trader_id",
+            "type": "integer"
+          },
+          {
+            "name": "oct_return",
+            "type": "number"
+          },
+          {
+            "name": "nov_return",
+            "type": "number"
+          },
+          {
+            "name": "oct_rank",
+            "type": "integer"
+          },
+          {
+            "name": "nov_rank",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ]
+}

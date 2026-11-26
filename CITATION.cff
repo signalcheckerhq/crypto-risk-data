@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+title: "Crypto risk data: leverage survival and leaderboard luck"
+type: dataset
+authors:
+  - name: "SignalCheckerHQ"
+    website: "https://signalcheckerhq.org/"
+date-released: 2026-11-26
+license: CC-BY-4.0
+url: "https://signalcheckerhq.org/data/"
+repository-code: "https://github.com/signalcheckerhq/crypto-risk-data"
+keywords: [crypto, leverage, liquidation, bitcoin, trading, open data]
