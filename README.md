@@ -1,5 +1,7 @@
 # Crypto risk data (free CSV, CC BY 4.0)
 
+Also on [Hugging Face](https://huggingface.co/datasets/SignalCheckerHQ/crypto-risk-data) and [Kaggle](https://www.kaggle.com/datasets/signalcheckerhq/crypto-leverage-survival-and-leaderboard-luck).
+
 Two small datasets computed from public **Coinbase 1-hour prices**, made for people who want to check
 trading claims with numbers instead of screenshots. Both files are plain CSV, free to use, share and adapt
 with credit.
